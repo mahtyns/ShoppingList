@@ -1,0 +1,102 @@
+body {
+    background-image: url("background.jpg");
+    background-size: 100%;
+    
+}
+
+.container {
+    position: absolute;
+    width: 20rem;
+    height: 40rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 15px 15px 45px 0;
+    box-shadow: 0 0 55px 0 rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+.addBtn {
+    background-color: white;
+    border: none;
+    display: inline;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: inherit;
+}
+
+.addProduct {
+    border: none;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: inherit;
+    
+    
+}
+
+.inputBtn {
+    background-color: white;
+    width: inherit;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 15px 15px 0 0;
+    }
+
+    .addBtn > i {
+        transform: scale(1.4);
+        filter: opacity(0.6);
+    }
+
+    .list {
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        margin-top: 15px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    
+    }
+
+    .list::-webkit-scrollbar {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 0px;
+    }
+
+    .productList {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 10px 5px;
+        height: 35px;
+        align-items: center;        
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 0px 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        transition: all 1s ease-in-out;
+    }
+
+    .icons> .fa-check-circle-o {
+        transform: scale(1.5);
+        color: rgb(97, 150, 44);
+        padding: 0 10px;
+    }
+    .icons>.fa-times {
+        transform: scale(1.5);
+        color: rgb(87, 48, 63);
+        padding: 0 10px;
+    }
+
+    .productList:hover {
+        background-color: rgb(238, 201, 201);
+    }
